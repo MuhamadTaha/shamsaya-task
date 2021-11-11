@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+
+.chart-cont {
+  width: 50%;
+  margin: 50px auto ;
+}
+
+#handleError .show-message {
+  color: #fff;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#handleError #show-error {
+  color: #f44;
+}
+
+#handleError #show-success {
+  color: #00c851;
+}
+
+.hide {
+  display: none;
+}
+
+input[type='date'], .fetch {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid #727481;
+  outline: none;
+  background-color: #def4e4;
+  background: linear-gradient(90deg, #727481, #ddd8ae);
+  box-shadow: 0px 2px 2px #aaa;
+  color: #fff;
+  font-size: 16px;
+  margin: 20px;
+  position: relative;
+  overflow: visible;
+}
+
+input[type='date']:nth-of-type(1):before, input[type='date']:nth-of-type(2):before {
+  content: 'Start Date';
+  position: absolute;
+  color: #727481  ;
+  top: -60%;
+  left: 0;
+}
+
+input[type='date']:nth-of-type(2):before {
+  content: 'End Date';
+}
+
+.fetch {
+  border: 1px solid darkslategray;
+  cursor: pointer !important;
+}
+
+.fetch:hover {
+  opacity: 0.8;
+}
+
+.svg-cont {
+  background: linear-gradient(#FFF, #ccc);
+  box-shadow: 0px 2px 2px #aaa;
+  width: max-content;
+  margin: 0px auto 100px;
+  border: 1px solid #aaa;
+}
+
+svg {
+  padding: 0 50px;
+}
+
+svg g:nth-of-type(1) rect, svg g:nth-of-type(1) text {
+  fill: crimson;
+}
+
+svg g:nth-of-type(2) rect, svg g:nth-of-type(2) text {
+  fill: seagreen;
+}
+
+svg g:nth-of-type(3) rect, svg g:nth-of-type(3) text {
+  fill: royalblue
+}
+
+svg g:nth-of-type(4) rect, svg g:nth-of-type(4) text {
+  fill: goldenrod;
+}
+
+.data-cont {
+  width: 300px;
+  background-color: #f5f5f5;
+  display: inline-block;
+  margin: 30px 30px 0 0;
+  padding: 0;
+  box-shadow: 0px 2px 2px #aaa;
+}
+
+.data-cont .submitted-date {
+  color: #fff;
+  background: linear-gradient(90deg, #727481, #ddd8ae);
+  margin: 0;
+  padding: 8px 0;
+}
+
+.data p {
+  display: inline-block;
+  margin: 10px ;
+}
